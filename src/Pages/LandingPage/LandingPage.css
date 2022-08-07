@@ -2,7 +2,11 @@
     margin: 0;
     padding: 0;
   }
-
+.Body{
+  background: url('../../assets/img/Bgimg.png');
+  background-position: top;
+    background-repeat: no-repeat;
+}
 .Banner{
     padding-left: 150px;
     padding-top: 300px;

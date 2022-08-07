@@ -11,14 +11,7 @@ import Bgimg from '../../assets/img/Bgimg.png'
 function LandingPage(){
 
     return (
-      <div
-        className="Body"
-        style={{
-          backgroundImage: `url(${Bgimg})`,
-          backgroundPosition: "top",
-          backgroundSize: "100%",
-        }}
-      >
+      <div className="Body">
         <div className="Banner">
           <div className="Heading">
             <h1>
@@ -36,7 +29,6 @@ function LandingPage(){
         <About />
         <ProjectCard />
         <Footer />
-
       </div>
     );
 } 
