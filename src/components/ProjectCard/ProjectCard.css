@@ -1,0 +1,85 @@
+.project h1{
+    padding-top: 30px;
+    background-color: #06071B;
+    text-align: center;
+    color: white;
+    padding-bottom: 50px;
+
+}
+.projectcards{
+    background-color: #06071B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+
+}
+.card1{
+    background: url('../../assets/img/cardimgpng.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    color: white;
+    background-color: black;
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+    transition: transform 250ms;
+}
+.card1:hover{
+    transform: translateY(-10px);
+    
+}
+.card2{
+    background: url('../../assets/img/cardimgpng.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    color: white;
+    background-color: black;
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+    margin-left: 30px;
+    transition: transform 250ms;
+    
+}
+.card2:hover{
+    transform: translateY(-10px);
+}
+
+.content-text{
+    color: rgb(176, 176, 176);
+
+
+}
+
+
+
+.img-box{
+    background-color: #06071B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons{
+    margin-top: 60px;
+    margin-bottom: 10px;
+    position: absolute;
+}
+
+.buttons Button{
+    color: white;
+    margin-left: -5px;
+}
+
+.buttons Button:hover{
+    color: rgb(111, 111, 255);
+}
+
+.btn1{
+    margin-left: 500px;
+}
+
+.card-content{
+    padding-top: 200px;
+}

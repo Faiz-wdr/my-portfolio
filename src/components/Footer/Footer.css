@@ -1,0 +1,13 @@
+.footer{
+    color: #fff;
+    background-color: #06071B;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 12px;
+}
+
+.footer span{
+    background-image: -webkit-linear-gradient(10deg, #4771E3, #7346BD, #3D7FEB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

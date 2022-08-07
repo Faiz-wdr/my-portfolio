@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+.Banner{
+    padding-left: 150px;
+    padding-top: 300px;
+    margin-bottom: 200px;
+}
+.Heading h1{
+    color: white;
+    font-size: 70px;
+    background-color: transparent;
+    
+  }
+.Banner p{
+    color: white;
+    font-weight: lighter;
+}
+
+.Heading span{
+    background-image: -webkit-linear-gradient(45deg, #4771E3, #7346BD, #3D7FEB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.Banner button {
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 60px;
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
+  background-color: #06071B;
+  border: none;
+}
+.Banner button svg {
+  font-size: 25px;
+  margin-left: 10px;
+  transition: 0.3s ease-in-out;
+  line-height: 1;
+}
+.Banner button:hover svg {
+  margin-left: 25px;
+}
