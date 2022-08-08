@@ -3,9 +3,20 @@
     background-color: #06071B;
     text-align: center;
     color: white;
-    padding-bottom: 50px;
-
+    padding-bottom: 2px;
 }
+
+hr{
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 85px;
+    width: 70px;
+    background: linear-gradient(45deg, #4771E3, #7346BD, #3D7FEB);
+    height: 2px;
+    margin-bottom: 20px;
+  }
+
 .projectcards{
     background-color: #06071B;
     display: flex;
@@ -82,4 +93,33 @@
 
 .card-content{
     padding-top: 200px;
+}
+
+@media (max-width: 480px){
+    .projectcards{
+        background-color: #06071B;
+        display: block;
+        align-content: center;
+        margin: auto;
+    }
+
+    .hr{
+        border: none;
+        margin-top: 8px;
+        margin-bottom: 5px;
+        margin-left: 286px;
+        width: 70px;
+        background: linear-gradient(45deg, #4771E3, #7346BD, #3D7FEB);
+        height: 2px;
+        margin-bottom: 20px;
+      }
+
+    .card1{
+        margin-left: 40px;
+    }
+    .card2{
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+
 }
