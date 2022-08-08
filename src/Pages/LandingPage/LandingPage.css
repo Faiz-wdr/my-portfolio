@@ -1,23 +1,44 @@
 * {
-    margin: 0;
-    padding: 0;
+  
   }
 .Body{
-  background: url('../../assets/img/Bgimg.png');
+  /* background: url('../../assets/img/Bgimg.png');
   background-position: top;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
+    background-color: #06071B;
+    overflow-x: hidden;
 }
+
 .Banner{
     padding-left: 150px;
-    padding-top: 300px;
+    padding-top: 120px;
     margin-bottom: 200px;
+}
+.flex{
+  display: flex;
+}
+
+.Heading{
+  padding-top: 150px;
 }
 .Heading h1{
     color: white;
     font-size: 70px;
-    background-color: transparent;
-    
+    background-color: transparent;  
   }
+
+  .img{
+    margin-left: 80px;
+  }
+
+  .img img{ 
+    padding-top: 60px;
+    padding-left: 200px; 
+    height: 100%;
+    width: 60%;
+    object-fit: contain;
+  }
+
 .Banner p{
     color: white;
     font-weight: lighter;
@@ -32,7 +53,7 @@
   color: #fff;
   font-weight: 700;
   font-size: 20px;
-  margin-top: 60px;
+  margin-top: -90px;
   letter-spacing: 0.8px;
   display: flex;
   align-items: center;
@@ -47,4 +68,93 @@
 }
 .Banner button:hover svg {
   margin-left: 25px;
+  
+}
+
+@media (max-width: 414px){
+  .Body{
+    background-color: #06071B;
+  }
+  .Banner{
+    padding-left: 50px;
+    padding-top: 60px;
+    margin-bottom: 200px;
+}
+
+.flex{
+  display: block;
+}
+  
+  .Heading{
+    padding-top: 60px;
+  }
+
+  .Heading h1{
+    color: white;
+    font-size: 70px;
+  }
+
+  .Heading span{
+    display: block;
+    background-image: -webkit-linear-gradient(45deg, #4771E3, #7346BD, #3D7FEB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Banner p{
+  color: white;
+  font-weight: lighter;
+  font-size: small;
+  margin-top: 15px;
+}
+
+.Banner button {
+  margin-top: 30px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.8px;
+  align-items: center;
+  background-color: #06071B;
+  border: none;
+}
+.Banner button svg {
+  width: 18px;
+  height: 18px;
+  margin-left: 8px;
+  position: relative;
+  line-height: 2;
+  transition: 0.3s ease-in-out;
+  animation: mymove 1s infinite;
+}
+.Banner button:hover svg {
+  margin-left: 15px;
+  
+}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 8px;}
+}
+
+.img{
+  padding-top: 10px;
+  margin-left: 1px;
+  padding-bottom: 0px;
+}
+
+.img img{
+  padding-bottom: 80px; 
+  padding-right: 80px; 
+  height: 260px;
+  width: 100%;
+  object-fit: contain;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.navbar{
+  display: none;
+}
+
 }
