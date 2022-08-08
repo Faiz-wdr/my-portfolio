@@ -121,6 +121,7 @@
     }
 
     .about button{
+      border: none;
       background: linear-gradient(45deg, #4771E3, #7346BD, #3D7FEB);
     }
   }

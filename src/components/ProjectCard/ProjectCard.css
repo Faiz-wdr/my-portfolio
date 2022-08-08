@@ -96,14 +96,8 @@ hr{
 }
 
 @media (max-width: 480px){
-    .projectcards{
-        background-color: #06071B;
-        display: block;
-        align-content: center;
-        margin: auto;
-    }
 
-    .hr{
+     .hr{
         border: none;
         margin-top: 8px;
         margin-bottom: 5px;
@@ -114,12 +108,21 @@ hr{
         margin-bottom: 20px;
       }
 
+    .projectcards{
+        background-color: #06071B;
+        display: block;
+        align-content: center;
+        margin: auto;
+    }
+
     .card1{
-        margin-left: 40px;
+        margin-left: auto;
+        margin-right: auto;
     }
     .card2{
         margin-top: 20px;
-        margin-left: 40px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
 }
