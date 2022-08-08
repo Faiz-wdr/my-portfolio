@@ -91,10 +91,11 @@
 
         .Heading h1{
           color: white;
-          font-size: 70px;
+          font-size: 90px;
         }
 
         .Heading span{
+          padding-top: 0.1px;
           display: block;
           background-image: -webkit-linear-gradient(45deg, #4771E3, #7346BD, #3D7FEB);
           -webkit-background-clip: text;
@@ -104,8 +105,9 @@
       .Banner p{
         color: white;
         font-weight: lighter;
-        font-size: small;
+        font-size: 30px;
         margin-top: 15px;
+        margin-left: 1px;
       }
 
       .Banner button {
