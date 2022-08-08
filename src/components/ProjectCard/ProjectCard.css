@@ -3,7 +3,7 @@
     background-color: #06071B;
     text-align: center;
     color: white;
-    padding-bottom: 2px;
+    padding-bottom: 20px;
 }
 
 hr{
@@ -97,16 +97,6 @@ hr{
 
 @media (max-width: 480px){
 
-     .hr{
-        border: none;
-        margin-top: 8px;
-        margin-bottom: 5px;
-        margin-left: 286px;
-        width: 70px;
-        background: linear-gradient(45deg, #4771E3, #7346BD, #3D7FEB);
-        height: 2px;
-        margin-bottom: 20px;
-      }
 
     .projectcards{
         background-color: #06071B;

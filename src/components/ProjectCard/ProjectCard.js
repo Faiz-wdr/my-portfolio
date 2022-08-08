@@ -10,11 +10,7 @@ export default function MediaCard() {
   return (
    <div className='project'>
     <h1>Recent Projects</h1>
-    <div className='img-box'>
-           
-    </div>
     <div className='projectcards'>
-      <hr className='hr'></hr>
       <div  className='card1'>
         <CardContent>
         <div className='card-content'>
