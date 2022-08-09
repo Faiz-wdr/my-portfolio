@@ -1,28 +1,35 @@
-import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import {React, useRef} from 'react'
+// import { useNavigate } from 'react-router-dom'
+import {FaBars, FaTimes} from 'react-icons/fa'
 import './NavBar.css'
 function NavBar() {
 
-    const navigate = useNavigate()
+     
+    // const navigate = useNavigate()
+    const navRef =useRef();
+
+    const showNavBar = () => {
+        navRef.current.classList.toggle("responsive_nav");
+    }
 
     return (
-        <nav className='nav_bar' >
-            <ul>
-                <li>Home</li>
-                <li
-                    onClick={() => navigate('/about')}
-                >About</li>
-                <li
-                    onClick={() => navigate('/about')}
-                >Skills</li>
-                <li
-                    style={{ cursor: 'pointer' }}
-
-                >Projects</li>
-                <li>Blogs</li>
-            </ul>
-
-        </nav>
+        <header>
+            <nav ref={navRef} className='nav_bar' >
+                <div className='nav-text'>
+                    <a href="/#">Home</a>
+                    <a href="/#">About</a>
+                    <a href="/#">Skills</a>
+                    <a href="/#">Projects</a>
+                    <a href="/#">Blogs</a>
+                </div>
+                <button className='nav-btn nav-close-btn' onClick={showNavBar}>
+                    <FaTimes />
+                </button>
+            </nav>
+            <button className='nav-btn' onClick={showNavBar}>
+                    <FaBars />
+                </button>
+        </header>
     )
 }
 

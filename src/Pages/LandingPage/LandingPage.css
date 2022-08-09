@@ -2,16 +2,14 @@
   
   }
 .Body{
-  /* background: url('../../assets/img/Bgimg.png');
-  background-position: top;
-    background-repeat: no-repeat; */
     background-color: #06071B;
+    height: 100%;
     overflow-x: hidden;
 }
 
 .Banner{
     padding-left: 200px;
-    padding-top: 70px;
+    padding-top: 50px;
     margin-bottom: 200px;
 }
 .flex{
@@ -24,13 +22,13 @@
 }
 .Heading h1{
     color: white;
-    font-size: 70px;
+    font-size: 90px;
     background-color: transparent;  
   }
 
   .img{
     margin-top: 60px;
-    margin-left: 80px;
+    margin-left: 60px;
   }
 
   .img img{ 
@@ -43,6 +41,7 @@
 
 .Banner p{
     color: white;
+    font-size: 28px;
     font-weight: lighter;
 }
 
@@ -156,8 +155,5 @@
         transform: scaleX(-1);
       }
 
-      .navbar{
-        display: none;
-      }
 
 }
