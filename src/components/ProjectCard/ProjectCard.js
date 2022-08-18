@@ -8,7 +8,7 @@ import './ProjectCard.css';
 
 export default function MediaCard() {
   return (
-   <div className='project'>
+   <div id='Projects' className='project'>
     <h1>Recent Projects</h1>
     <div className='projectcards'>
       <div  className='card1'>

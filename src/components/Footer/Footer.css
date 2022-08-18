@@ -1,13 +1,44 @@
 .footer{
     color: #fff;
-    background-color: #06071B;
+    background-color: black;
     text-align: center;
     padding-bottom: 10px;
     font-size: 12px;
+}
+
+.socio-icons{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 700px;
+    margin-right: 700px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
 }
 
 .footer span{
     background-image: -webkit-linear-gradient(10deg, #4771E3, #7346BD, #3D7FEB);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer a:hover{
+    color: #3D7FEB;
+
+}
+
+@media (max-width: 480px){
+
+    .socio-icons{
+        display: flex;
+        justify-content: space-around;
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+
 }

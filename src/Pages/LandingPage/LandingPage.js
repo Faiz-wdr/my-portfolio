@@ -11,7 +11,7 @@ import vector from "../../assets/img/3dimg.png";
 
 function LandingPage() {
   return (
-    <div className="Body">
+    <div id='Home' className="Body">
       <div className="Banner">
         <div className="flex">
           <div className="Heading">
@@ -23,6 +23,7 @@ function LandingPage() {
               <br />
               Web Developer
             </p>
+            
             <div className="btn">
               <button onClick={() => console.log("connect")}>
                 Let’s Connect <ArrowRightCircle size={25} />

@@ -14,7 +14,7 @@ import './Skills.css'
 function Skills() {
     return (
       <div className="main">
-            <div className='head'>
+            <div id='Skills' className='head'>
                 <h1>Skills</h1>
             </div>
         <div className='body'>

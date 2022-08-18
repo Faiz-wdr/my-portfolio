@@ -5,7 +5,7 @@ function Aboutme(){
     return (
       <div className="column">
         <div className="vector"></div>
-        <div className="about">
+        <div id='About' className="about">
           <h1>About Me</h1>
           <hr></hr>
           <p>
