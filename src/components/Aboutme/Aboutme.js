@@ -1,10 +1,13 @@
 import React, {} from 'react';
 import './Aboutme.css';
+import TechImg from "../../assets/img/techimg.png";
 
 function Aboutme(){
     return (
       <div className="column">
-        <div className="vector"></div>
+        <div className="vector">
+          <img alt='techImage' src={TechImg}></img>
+        </div>
         <div id='About' className="about">
           <h1>About Me</h1>
           <hr></hr>

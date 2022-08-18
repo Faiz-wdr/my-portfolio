@@ -11,6 +11,14 @@
     width: 50%;
     background-color: #06071B;
 }
+
+.vector img{ 
+  padding-top: 60px;
+  padding-left: 200px; 
+  height: 100%;
+  width: 59%;
+  object-fit: contain;
+}
 .about{
     background-color: #06071B;
     width: 50%;
