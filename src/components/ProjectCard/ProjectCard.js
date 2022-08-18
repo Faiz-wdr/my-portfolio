@@ -35,6 +35,7 @@ export default function MediaCard() {
            
       </div>
         <div  className='card2'>
+          
         <CardContent>
         <div className='card-content'>
             <Typography gutterBottom variant="h5" component="div">

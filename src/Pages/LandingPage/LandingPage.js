@@ -39,8 +39,8 @@ function LandingPage() {
         <NavBar />
       </div>
       <About />
-      <ProjectCard />
       <Skills />
+      <ProjectCard />
       <Footer />
     </div>
   );
