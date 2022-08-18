@@ -6,9 +6,10 @@
     background-color: black;
     padding: 25px;
     margin-bottom: 50px;
+    margin-top: 30px;
 }
 .head{
-margin-right: 20%;
+    margin-right: 20%;
     margin-left: 20%;
     text-align: center; 
     color: white;
@@ -20,19 +21,20 @@ margin-right: 20%;
     margin-left: 400px;
     margin-right: 400px;
     align-items: center;
+    
+}   
+
+
+.icon{
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
     color: rgb(187, 105, 187);
     transition: transform 250ms;
-}   
-
-
-.html{
-    size: 2rem;
 }
 
-.html:hover{
-    color: white;
+.icon:hover{
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
 
 }
 
@@ -48,10 +50,14 @@ margin-right: 20%;
         margin-left: 25px;
         margin-right: 25px;
         align-items: center;
-        filter: grayscale(100%);
-        -webkit-filter: grayscale(100%);
-        color: rgb(187, 105, 187);
         transition: transform 250ms;
-    }   
+    }  
+    
+    .icon{
+        filter: grayscale(0%);
+        -webkit-filter: grayscale(0%);
+        transition: transform 250ms;
+    }
+    
 
 }

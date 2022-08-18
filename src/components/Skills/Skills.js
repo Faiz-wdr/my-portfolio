@@ -1,7 +1,12 @@
 import {React} from 'react'
-import { IconContext } from "react-icons/lib"
-import { SiFlutter, SiJavascript } from "react-icons/si";
-import { FaHtml5, FaCss3, FaReact, FaFigma, FaJava } from "react-icons/fa";
+import Flutter from "../../assets/icons/flutter.svg";
+import Figma from "../../assets/icons/figma.svg";
+import Css from "../../assets/icons/css.svg";
+import Html from "../../assets/icons/html.svg";
+import Reactjs from "../../assets/icons/react.svg";
+import Illu from "../../assets/icons/illu.svg";
+import Psd from "../../assets/icons/psd.svg";
+import Js from "../../assets/icons/js.svg";
 // import { useNavigate } from 'react-router-dom'
 import './Skills.css'
 
@@ -13,47 +18,16 @@ function Skills() {
                 <h1>Skills</h1>
             </div>
         <div className='body'>
-            <IconContext.Provider value={{ size: '25px', className: "html" }}>
-            <div>
-                <FaHtml5 />
-            </div>
-            </IconContext.Provider>
 
-            <IconContext.Provider value={{ size: '25px', className: "html" }}>
-            <div>
-                <FaCss3 />
-            </div>
-            </IconContext.Provider>
-
-            <IconContext.Provider value={{ size: '25px', className: "html" }}>
-            <div>
-                <FaReact />
-            </div>
-            </IconContext.Provider>
-
-            <IconContext.Provider value={{ size: '25px', className: "html" }}>
-            <div>
-                <FaFigma />
-            </div>
-            </IconContext.Provider>
-
-            <IconContext.Provider value={{ size: '25px', className: "html" }}>
-            <div>
-                <FaJava />
-            </div>
-            </IconContext.Provider>
-
-            <IconContext.Provider value={{ size: '25px', className: "html" }}>
-            <div>
-                <SiFlutter />
-            </div>
-            </IconContext.Provider>
-
-            <IconContext.Provider value={{ size: '25px', className: "html" }}>
-            <div>
-                <SiJavascript />
-            </div>
-            </IconContext.Provider>
+            <img className="icon" alt='icon' src={Flutter}></img>
+            <img className="icon" alt='icon' src={Figma}></img>
+            <img className="icon" alt='icon' src={Html}></img>
+            <img className="icon" alt='icon' src={Css}></img>
+            <img className="icon" alt='icon' src={Reactjs}></img>
+            <img className="icon" alt='icon' src={Js}></img>
+            <img className="icon" alt='icon' src={Psd}></img>
+            <img className="icon" alt='icon' src={Illu}></img>
+            
         </div>
       </div>
     );
