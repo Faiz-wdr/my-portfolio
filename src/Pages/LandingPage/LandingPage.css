@@ -72,7 +72,13 @@
   
 }
 
-
+.top-btn{
+  color: white;
+  position: absolute;
+  padding-left: 93%;
+  transform: translateY(-20px);
+  
+}
 
 @media (max-width: 480px){
         .Body{
@@ -136,6 +142,11 @@
         margin-left: 15px;
         
       }
+      
+.top-btn{
+  padding-left: 85%;
+
+}
 
       @keyframes mymove {
         from {left: 0px;}
