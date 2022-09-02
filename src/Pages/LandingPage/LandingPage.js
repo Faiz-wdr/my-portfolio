@@ -1,10 +1,11 @@
 import React from "react";
-import {} from "react-router-dom";
+// import {} from "react-router-dom";
 import { IoArrowUpCircle } from "react-icons/io5";
 import NavBar from "../../components/NavBar/NavBar";
 import About from "../../components/Aboutme/Aboutme";
 import Footer from "../../components/Footer/Footer";
 import Skills from "../../components/Skills/Skills";
+import TestCard from "../../components/TestCard/TestCard";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import "./LandingPage.css";
 import { ArrowRightCircle } from "react-bootstrap-icons";
@@ -29,7 +30,7 @@ function LandingPage() {
 
             <div className="btn">
               <button onClick={() => console.log("connect")}>
-                Let’s Connect <ArrowRightCircle size={25} />
+                See My Projects <ArrowRightCircle size={25} />
               </button>
             </div>
           </div>
@@ -44,12 +45,12 @@ function LandingPage() {
       <About />
       <Skills />
       <ProjectCard />
-      <IconContext.Provider value={{ className:"top-btn", size: "35px" }}>
+      <TestCard />
+      <IconContext.Provider value={{ className: "top-btn", size: "35px" }}>
         <AnchorLink href="#Home">
           <IoArrowUpCircle />
         </AnchorLink>
       </IconContext.Provider>
-
       <Footer />
     </div>
   );

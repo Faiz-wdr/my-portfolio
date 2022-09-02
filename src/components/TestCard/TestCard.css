@@ -1,0 +1,116 @@
+
+.card-bg{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.802)50%,rgba(0, 0, 0, 0.802)50%), url(bgimg.png);
+    background-size: 100%;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+.card-bg h1{
+    padding-top: 30px;
+    text-align: center;
+    color: white;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.card-bg .project h1{
+    padding-top: 30px;
+    text-align: center;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.Card{
+  margin-left: auto;
+  margin-right: auto;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Testcards{
+    margin: auto;
+    padding-top: 20px;
+    margin-bottom: 5px;
+}
+
+.t-card1{
+    padding-left: 20px;
+    background-repeat: no-repeat;
+    color: white;
+    background-color: #06071B;
+    height: 230px;
+    width: 400px;
+    border-radius: 10px;
+    transition: transform 250ms;
+}
+
+.t-content-text p{
+    align-content: center;
+    opacity: 50%;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.avatar {
+  background-image: url("avatar.png");
+  background-position: center;
+  background-size: 100%;
+  margin-top: 57px;
+  vertical-align: middle;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-left: 15px;
+}
+
+.c-btm{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.cli-name{
+    margin-top: 57px;
+}
+.cli-name h1{
+}
+
+.cli-name p{
+    font-size: 10px;
+    opacity: 50%;
+
+}
+
+.card-bg a{
+    border-radius: 50%;
+}
+
+.card-bg .bullets {
+    z-index: 2;
+    bottom: 0;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .card-bg .bullets > a {
+    display: inline-block;
+    margin: 4px;
+    width:       8px;
+    height:      8px;
+    line-height: 8px;
+    text-decoration: none;
+    text-align: center;
+    background: rgba(255, 255, 255, 1);
+    -webkit-transition: 0.3s;
+            transition: 0.3s;
+  }
+
+  .card-bg .bullets > a+a {
+    background: rgba(255, 255, 255, 0.5); /* Dim all but first */
+  }
+  .card-bg  .bullets > a:hover {
+    background: rgba(255, 255, 255, 0.7) !important;
+  }
