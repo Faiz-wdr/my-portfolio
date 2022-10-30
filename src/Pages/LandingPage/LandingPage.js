@@ -5,7 +5,8 @@ import NavBar from "../../components/NavBar/NavBar";
 import About from "../../components/Aboutme/Aboutme";
 import Footer from "../../components/Footer/Footer";
 import Skills from "../../components/Skills/Skills";
-import TestCard from "../../components/TestCard/TestCard";
+// import TestCard from "../../components/TestCard/TestCard";
+import Slider from "../../components/Slider/Slider";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import "./LandingPage.css";
 import { ArrowRightCircle } from "react-bootstrap-icons";
@@ -45,12 +46,13 @@ function LandingPage() {
       <About />
       <Skills />
       <ProjectCard />
-      <TestCard />
+      <Slider />
       <IconContext.Provider value={{ className: "top-btn", size: "35px" }}>
         <AnchorLink href="#Home">
           <IoArrowUpCircle />
         </AnchorLink>
       </IconContext.Provider>
+      
       <Footer />
     </div>
   );
