@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaGithub, FaInstagram, FaLinkedin, FaPinterest } from 'react-icons/fa';
 import './Footer.css'
+import { BsDot } from 'react-icons/bs'
 
 const curryear = new Date().getFullYear();
 
@@ -16,7 +17,7 @@ function Footer(){
           <a href='https://in.pinterest.com/Faizwdr/'><FaPinterest /></a>
         </div>
         <p>
-          © <span>Faiz Rahim</span> . All Rights Resrved {curryear}
+          © <span>Faiz Rahim</span> <BsDot className='dot'/>{curryear}
         </p>
       </div>
     );

@@ -13,23 +13,31 @@ import './Skills.css'
 
 function Skills() {
     return (
-      <div className="main">
-            <div id='Skills' className='head'>
-                <h1>Skills</h1>
+      <div className="container-cmpnt-skl">
+        <div className="column-left-skl">
+          <div className="skl-txt">
+            <div id="Skills" className="skl-head">
+              <h1>Areas of <br/>Expertise</h1>
             </div>
-        <div className='body'>
-
-            <img className="icon" alt='icon' src={Flutter}></img>
-            <img className="icon" alt='icon' src={Figma}></img>
-            <img className="icon" alt='icon' src={Html}></img>
-            <img className="icon" alt='icon' src={Css}></img>
-            <img className="icon" alt='icon' src={Reactjs}></img>
-            <img className="icon" alt='icon' src={Js}></img>
-            <img className="icon" alt='icon' src={Psd}></img>
-            <img className="icon" alt='icon' src={Illu}></img>
-            
+          </div>
         </div>
-      </div>
+        <div className="column-right-skl">
+        <div className='skl'>
+          <div className="skl-up">
+            <img className="icon" alt="icon" src={Flutter}></img>
+            <img className="icon-f" alt="icon" src={Figma}></img>
+            <img className="icon" alt="icon" src={Html}></img>
+            <img className="icon" alt="icon" src={Css}></img>
+            </div>
+            <div className="skl-down">
+            <img className="icon" alt="icon" src={Reactjs}></img>
+            <img className="icon" alt="icon" src={Js}></img>
+            <img className="icon" alt="icon" src={Psd}></img>
+            <img className="icon" alt="icon" src={Illu}></img>
+            </div>
+            </div>
+          </div>
+        </div>
     );
 }
 

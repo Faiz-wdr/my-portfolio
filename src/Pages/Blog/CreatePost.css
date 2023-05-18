@@ -1,0 +1,39 @@
+.row{
+    background-color: black;
+    margin-top: 150px;
+    padding-left: 150px;
+}
+
+h1{
+    color: white;
+    margin-bottom: 20px;
+}
+
+.form-control{
+    background-color: rgb(31, 12, 47);
+    margin-bottom: 20px;
+    width: 800px;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+}
+
+.form-control::placeholder{
+    opacity: 0.3;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.btn-sub{
+    color: white;
+    background-color: blueviolet;
+    width: 130px;
+    height: 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: none;
+    transform: none;
+}
+
+

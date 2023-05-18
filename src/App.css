@@ -1,5 +1,76 @@
 * {
   margin: 0;
   padding: 0;
+}
 
+.Homepage{
+  margin: 50px 200px 50px 200px;
+  height: auto;
+  margin-bottom: 40px;
+}
+.container-mt{
+
+}
+.card{
+  height: 312px;
+  background-color: #00040B;
+  border-radius: 8px;
+  margin: 10px 5px 20px 5px;
+  padding: 40px;
+  backdrop-filter: blur(10px);
+}
+
+.btn-dlt-msg{
+  text-decoration: none;
+  color: white;
+  background-color: #ff588a;
+  padding: 10px;
+  margin: 3px;
+  border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+.d-flex{
+  display: flex;
+  flex: end;
+  justify-content: end;
+}
+.img-card{
+  margin-left: -39px;
+  margin-top: -9px;
+  float: left;
+  text-align: left;
+  border-radius: 10px 0px 0px 10px;
+  background-color: #ff588a;
+  height: 390px;
+  width: 390px;
+}
+
+.card-txt{
+  
+  margin-left: 380px;
+}
+
+h3{
+  color: white;
+}
+
+.card-title{
+  color: white;
+  font-size: 40px;
+  margin-top: -30px;
+  padding-top: 30px;
+}
+
+.post{
+  font-size: 20px;
+  color: #637086;
+  margin-top: 20px;
+}
+
+.read{
+  color: #ffffff52;
+  margin-top: 220px;
+  
 }

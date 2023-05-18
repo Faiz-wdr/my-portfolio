@@ -1,26 +1,24 @@
-.project h1{
-    padding-top: 30px;
-    background-color: #06071B;
-    text-align: center;
-    color: white;
-    padding-bottom: 20px;
+.project{
+    height: 100vh;
 }
 
-hr{
-    border: none;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 85px;
-    width: 70px;
-    background: linear-gradient(45deg, #4771E3, #7346BD, #3D7FEB);
-    height: 2px;
-    margin-bottom: 20px;
-  }
+.proj-head{
+    display: flex;
+    justify-content: center;
+}
+
+.project h1{
+    margin-top: 260px;
+    margin-bottom: 60px;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+
 
 .projectcards{
-    background-color: #06071B;
     display: flex;
-    align-items: center;
+    align-content: center;
     justify-content: center;
     padding-bottom: 50px;
 
@@ -30,7 +28,7 @@ hr{
     background-position: top;
     background-repeat: no-repeat;
     color: white;
-    background-color: black;
+    background-color: #00040B;
     height: 400px;
     width: 400px;
     border-radius: 10px;
@@ -45,7 +43,7 @@ hr{
     background-position: top;
     background-repeat: no-repeat;
     color: white;
-    background-color: black;
+    background-color: #00040B;
     height: 400px;
     width: 400px;
     border-radius: 10px;
@@ -73,9 +71,8 @@ hr{
 }
 
 .buttons{
-    margin-top: 60px;
+    margin-top: 20px;
     margin-bottom: 10px;
-    position: absolute;
 }
 
 .buttons Button{
@@ -95,11 +92,16 @@ hr{
     padding-top: 200px;
 }
 
-@media (max-width: 480px){
+@media (max-width: 768px){
 
-
+    .project{
+        margin-top: -300px;
+    }
+    .project h1{
+       
+        font-size: 35px;
+    }
     .projectcards{
-        background-color: #06071B;
         display: block;
         align-content: center;
         margin: auto;

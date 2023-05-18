@@ -1,136 +1,107 @@
-* {
-    margin: 0;
-    padding: 0;
-  }
-.column{
-    display: flex;
-    flex-wrap: wrap;
-    
+.container-cmpnt{
+  background: url('../../assets/img/abt-bgimg.svg');
+  background-size: cover; /* Adjust the sizing as needed */
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  opacity: 0;
+  height: 100vh;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+  scroll-snap-align: start;
 }
-.vector{
-    width: 50%;
-    background-color: #06071B;
-}
 
-.vector img{ 
-  padding-top: 60px;
-  padding-left: 200px; 
-  height: 100%;
-  width: 59%;
-  object-fit: contain;
-}
-.about{
-    background-color: #06071B;
-    width: 50%;
-}
-.column h1{
-    padding-left: 20px;
-    padding-top: 80px;
-    text-align: left;
-    color: white;
-    font-size: 30px;
-
-  }
-  hr{
-    border: none;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 85px;
-    width: 70px;
-    background: linear-gradient(45deg, #4771E3, #7346BD, #3D7FEB);
-    height: 2px;
-  }
-
- .about p{
-    font-size: 20px;
-    padding-right: 300px;
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-bottom: 50px;
-    text-align: left;
-    color: white;
-  }
-
-  .about button{
-    margin-left: 20px;
-        font-weight: 700;
-        color: #fff;
-        border: 0.5;
-        border-color: white;
-        border-radius: 5px;
-        background-color: transparent;
-        padding: 14px 30px;
-        margin-bottom: 50px;
-        font-size: 13px;
-        position: relative;
-        transition: 0.3s ease-in-out; 
-            cursor: pointer;
-  }
-
-  .about button:hover {
-    background: linear-gradient(45deg, #4771E3, #7346BD, #3D7FEB);
-    transition: 0.3s ease-in-out;
-  }
-
-  .about button span{
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-  }
-
-  .about button span:after {
-    content: '\00bb';
-    position: absolute;
+@keyframes fadeIn {
+  0% {
     opacity: 0;
-    top: 0;
-    right: -10px;
-    transition: 0.5s;
   }
-
-  .about button:hover span {
-    padding-right: 15px;
-  }
-
-  
-  .about button:hover span:after {
+  100% {
     opacity: 1;
-    right: 0;
+  }
+}
+
+.column-left{
+  float: right;
+  flex: 50%;
+  width: 50%;
+  display: flex; /* Centers horizontally */
+  align-items: center;
+}
+.column-right{
+  float: right;
+  flex: 50%;
+  height: 100vh;
+  width: 50%;
+  display: flex; /* Centers horizontally */
+  align-items: center;
+}
+
+.abt-txt{
+  margin-left: 35%;
+  margin-right: 45px;
+}
+
+.abt-para{
+  width: 300px;
+  color: white;
+  font-size: 18px;
+}
+
+.abt-para p{
+}
+
+.abt-img{
+  transition: transform .5s;
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  border: 5px solid #7346BD;
+  margin-left: 45px;
+}
+
+.round-img{
+  transition: transform .5s;
+  background-image: url("../../assets/img/fr-web.jpg");
+  background-color: #010136;
+  background-size: cover; /* Adjust the sizing as needed */
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+}
+
+.round-img:hover,
+.round-img:focus{
+  transform: scale(1.1);
+}
+
+
+@media (max-width: 768px){
+  .container-cmpnt{
+    background-color: rgba(0, 0, 0, 1);
+    display: block;
   }
 
-  @media (max-width: 480px){
-
-    .vector{
-      width: 10%;
-      background-color: #06071B;
-    }
-    .about{
-      width: 80%;
+  .column-left{
+    float: left;
+    flex: 50%;
+    width: 50%;
+    display: flex; /* Centers horizontally */
+    align-items: center;
   }
-
-
-    .column h1{
-      padding-left: 20px;
-      padding-top: 10px;
-      text-align: left;
-      color: white;
-      font-size: 30px;
-    }
-
-    .about p{
-      font-size: 15px;
-      max-width: fit-content;
-      padding-right: 20px;
-      padding-left: 20px;
-      padding-top: 20px;
-      padding-bottom: 50px;
-      text-align: left;
-      text-align: justify;
-      color: white;
-    }
-
-    .about button{
-      border: none;
-      background: linear-gradient(45deg, #4771E3, #7346BD, #3D7FEB);
-    }
+  .column-right{
+  margin-left: -388px;
+  margin-top: 190px;
+    display: block; /* Centers horizontally */
+    align-items: center;
   }
+  .abt-img{
+    border: none;
+  }
+  .round-img{
+    height: 120px;
+  width: 120px;
+  border: 2px solid #7346BD;
+  }
+}

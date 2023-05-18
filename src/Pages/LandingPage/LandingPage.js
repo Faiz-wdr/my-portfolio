@@ -1,20 +1,29 @@
 import React from "react";
 // import {} from "react-router-dom";
-import { IoArrowUpCircle } from "react-icons/io5";
+import { IoArrowUpCircle, IoArrowDown } from "react-icons/io5";
 import NavBar from "../../components/NavBar/NavBar";
 import About from "../../components/Aboutme/Aboutme";
 import Footer from "../../components/Footer/Footer";
 import Skills from "../../components/Skills/Skills";
 // import TestCard from "../../components/TestCard/TestCard";
 import Slider from "../../components/Slider/Slider";
+import ProjCircle from '../../assets/img/my_proj_circle.svg'
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import "./LandingPage.css";
-import { ArrowRightCircle } from "react-bootstrap-icons";
 import vector from "../../assets/img/3dimg.png";
 import { IconContext } from "react-icons";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 function LandingPage() {
+
+  const scrollToProject = () => {
+    const aboutSection = document.getElementById('project-section');
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+
   return (
     <div id="Home" className="Body">
       <div className="Banner">
@@ -29,30 +38,30 @@ function LandingPage() {
               Web Developer
             </p>
 
-            <div className="btn">
+            {/* <div className="btn">
               <button onClick={() => console.log("connect")}>
                 See My Projects <ArrowRightCircle size={25} />
               </button>
-            </div>
-          </div>
-          <div className="img">
-            <img size="small" alt="vector img" src={vector}></img>
+            </div> */}
           </div>
         </div>
       </div>
+      <div className="img-body">
+        <img className="img-bg" alt="vector img" src={vector}></img>
+      </div>
+      <NavBar />
       <div className="navbar">
-        <NavBar />
+        <div className="img-body2">
+          <button className="btn-ar" onClick={scrollToProject}>
+            <IoArrowDown size={55} color="white" />
+          </button>
+          <img className="img-bg2" alt="circle" src={ProjCircle}></img>
+        </div>
       </div>
       <About />
       <Skills />
       <ProjectCard />
-      <Slider />
-      <IconContext.Provider value={{ className: "top-btn", size: "35px" }}>
-        <AnchorLink href="#Home">
-          <IoArrowUpCircle />
-        </AnchorLink>
-      </IconContext.Provider>
-      
+
       <Footer />
     </div>
   );

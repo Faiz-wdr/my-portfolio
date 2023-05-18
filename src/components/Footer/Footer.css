@@ -9,11 +9,11 @@
 .socio-icons{
     display: flex;
     justify-content: space-around;
-    margin-left: 700px;
-    margin-right: 700px;
+    margin-left: 44.5%;
     padding-top: 20px;
     margin-bottom: 20px;
     align-items: center;
+    width: 200px;
 }
 
 .footer span{
@@ -26,13 +26,25 @@
     text-decoration: none;
     color: white;
 }
+.footer p{
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+   display: flex;
+   justify-content: center;
+}
 
 .footer a:hover{
     color: #3D7FEB;
 
 }
-
-@media (max-width: 480px){
+.dot{
+    margin-top: 4px;
+    position: relative;
+}
+span{
+    margin-left: 5px;
+}
+@media (max-width: 786px){
 
     .socio-icons{
         display: flex;
@@ -40,5 +52,7 @@
         margin-left: 150px;
         margin-right: 150px;
     }
-
+    .footer{
+        margin-top: 450px;
+    }
 }

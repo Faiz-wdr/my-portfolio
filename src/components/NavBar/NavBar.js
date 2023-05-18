@@ -1,10 +1,25 @@
 import {React, useRef} from 'react'
-import AnchorLink from "react-anchor-link-smooth-scroll";
 // import { useNavigate } from 'react-router-dom'
 import {FaBars, FaTimes} from 'react-icons/fa'
 import './NavBar.css'
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { Link, Route, Routes, Switch } from 'react-router-dom';
+import Aboutme from '../Aboutme/Aboutme';
 function NavBar() {
 
+  const scrollToAbout = () => {
+    const aboutSection = document.getElementById('about-section');
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const scrollToProject = () => {
+    const aboutSection = document.getElementById('project-section');
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
      
     // const navigate = useNavigate()
     const navRef =useRef();
@@ -14,24 +29,26 @@ function NavBar() {
     }
 
     return (
-        <header>
-            <nav ref={navRef} className='nav_bar' >
-                <div className='nav-text'>
-                    <AnchorLink href='#Home'><a href="/#">Home</a></AnchorLink>
-                    <AnchorLink href='#About'><a href="/#">About</a></AnchorLink>
-                    <AnchorLink href='#Skills'><a href="/#">Skills</a></AnchorLink>
-                    <AnchorLink href='#Projects'><a href="/#">Projects</a></AnchorLink>
-                    <AnchorLink href='#Home'><a href="/#">Blogs</a></AnchorLink>
-                </div>
-                <button className='nav-btn nav-close-btn' onClick={showNavBar}>
-                    <FaTimes />
-                </button>
-            </nav>
-            <button className='nav-btn' onClick={showNavBar}>
-                    <FaBars />
-                </button>
-        </header>
-    )
+      <header>
+        <nav ref={navRef} className="nav_bar">
+          <ul>
+            <li className="nav-list">
+              <Link to={"/"}>Home</Link>
+            </li>
+            <li className="nav-list">
+            <a href="#about-section" onClick={scrollToAbout}>About</a>
+            </li>
+            <li className="nav-list">
+              <Link to="#project-section" onClick={scrollToProject}>Projects</Link>
+            </li>
+            <li className="nav-list">
+              <Link to="Blog">Blogs</Link>
+            </li>
+          </ul>
+        </nav>
+        
+      </header>
+    );
 }
 
 export default NavBar

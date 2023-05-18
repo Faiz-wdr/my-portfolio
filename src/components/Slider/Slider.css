@@ -66,8 +66,10 @@ body {
     border-radius: 10px;
     transition: transform 250ms;
     margin-left: 20px;
+    text-align: justify;
 }
 .p{
+  margin-right: 7px;
     align-content: center;
     opacity: 50%;
     font-size: 13px;
@@ -92,11 +94,7 @@ body {
   border-radius: 50%;
 }
 
-.c-btm{
-    display: flex;
-    justify-content: space-between;
-    width: 50%;
-}
+
 
 .h4{
     text-align: left;
@@ -107,7 +105,7 @@ body {
 .c-btm{
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    width: 53%;
     margin-top: 30px;
     margin-left: 15px;
 }
@@ -118,6 +116,11 @@ body {
         height: 400px;
         margin-bottom: 50px;
         margin-left: -10px;
+    }
+
+    
+    .t-card1, .t-card2, .t-card3, .t-card4 {
+    width: 380px;
     }
 
 

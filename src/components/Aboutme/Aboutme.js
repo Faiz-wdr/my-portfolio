@@ -1,28 +1,35 @@
-import React, {} from 'react';
+import React, { useRef} from 'react';
 import './Aboutme.css';
-import TechImg from "../../assets/img/techimg.png";
+import { useState, useEffect } from 'react';
 
 function Aboutme(){
+
+ 
+
     return (
-      <div className="column">
-        <div className="vector">
-          <img alt='techImage' src={TechImg}></img>
-        </div>
-        <div id='About' className="about">
-          <h1>About Me</h1>
-          <hr></hr>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fames morbi
-            lectus cursus nec sem aliquet lacus, sed. Enim, elementum, ultrices
-            ultrices risus dignissim cursus ultrices cursus. Quam vitae non
-            lectus et vulputate. Et purus etiam habitasse in elementum dolor,
-            tincidunt rutrum. Nisi lectus eu tortor in egestas id est
-            vestibulum. Nunc cras nibh gravida posuere. Ac nibh dui etiam amet,
-            urna. Lorem bibendum.
+        <div  id="about-section" className='container-cmpnt'>
+        <div className="column-left">
+        <div  className='abt-txt'>
+          <h1 className='abt-hed'>
+            About Me
+          </h1>
+          <div >
+          <p className='abt-para'>
+          I am a versatile designer and developer, specializing in UI/UX, graphics, and web. I create visually stunning, user-centric experiences by blending creativity with functionality. With a passion for crafting engaging interfaces, I deliver impactful digital solutions.
+          I am dedicated to exceeding client expectations and creating impactful digital solutions.
           </p>
-          <button><span>Download Resume</span></button>
+          </div>
         </div>
-      </div>
+        <div className='column-right'>
+        <div className='abt-img'>
+        <div className='round-img'>
+        </div>
+          
+        </div>
+        
+        </div>
+        </div>
+        </div>
     );
 }
 

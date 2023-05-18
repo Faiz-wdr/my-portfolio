@@ -8,18 +8,21 @@ import './ProjectCard.css';
 
 export default function MediaCard() {
   return (
-   <div id='Projects' className='project'>
+   <div id='project-section' className='project'>
+   <div className='proj-head'>
     <h1>Recent Projects</h1>
+    </div>
     <div className='projectcards'>
+    
       <div  className='card1'>
+
         <CardContent>
         <div className='card-content'>
             <Typography gutterBottom variant="h5" component="div"> 
-              Lizard
+              Morse Code App
             </Typography>
             <div className='content-text'>
-              <p>Lizards are a widespread group of squamate reptiles, with over 6,000
-              species, ranging across all continents except Antarctica
+              <p>Flutter app that translates Morse code and triggers the flashlight accordingly.
               </p>
             </div>
           </div>
@@ -39,11 +42,11 @@ export default function MediaCard() {
         <CardContent>
         <div className='card-content'>
             <Typography gutterBottom variant="h5" component="div">
-              Lizard
+              Socium: Find the Learning Partner
             </Typography>
             <div className='content-text'>
-              <p>Lizards are a widespread group of squamate reptiles, with over 6,000
-              species, ranging across all continents except Antarctica
+              <p>
+Discover your ideal learning partner with this React app designed to connect individuals seeking genuine educational collaborations.
               </p>
             </div>
           </div>
